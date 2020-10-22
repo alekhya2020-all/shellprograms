@@ -1,6 +1,6 @@
 #!/bin/bash -x
-a=1
-b=13
+a=11
+#b=33
 sum=$($a+$b)
 
 #echo $sum
