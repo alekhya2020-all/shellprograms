@@ -1,4 +1,3 @@
-#!/bin/bash -x
 read n
 if [ $n -ge 100 -a $n -le 999 ]
 then
@@ -12,55 +11,42 @@ do
 done
 fi
 
-read n
-echo ${array[@]}
-if [ $n -ge 100 -a $n -le 999 ]
-then
-    for((i=1;i<=n;i++)) 
+
+    for((i=1;i<=n;i++))
 	 do
         if [ $((n%i)) -eq 0 ]
-      then  
+      then
 		echo "factors:"$i
 	array[i]=$i
 echo ${array[i]}
 echo ${array[@]}
-fi	
-
-done
 fi
+done
 
-read n
-echo ${array[@]}
-if [ $n -ge 100 -a $n -le 999 ]
-then
-    for((i=1;i<=n;i++)) 
+
+    for((i=1;i<=n;i++))
     do
         if [ $((n%i)) -eq 0 ]
-      then  
+      then
       echo "factors:"$i
+echo ${array[i]}
 if [ $((i%2)) -eq 0 ]
-then 
-echo "even factors"$i
+then
+echo "even factors:"$i
 echo ${evenfactors[i]}
 elif [ $((i%2)) -ne 0 ]
-then 
+then
 echo "odd factors:" $i 
 echo ${oddfactors[i]}
-echo ${array[@]}
-fi 
-
-done
 fi
+fi
+done
 
-read n
-if [ $n -ge 100 -a $n -le 999 ]
-then
 on=$n
 rev=0
 s=0
 while [ $n -gt 0 ]
 do
-echo $n
     s=$(($n%10))
     rev=$((($rev*10)+$s))
     n=$(($n/10))
@@ -72,4 +58,4 @@ then
 else
   echo "Number is NOT palindrome"
 fi
-fi
+
