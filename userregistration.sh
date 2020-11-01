@@ -19,7 +19,7 @@ read input
 lastname "$input";
 
 function email(){
-pat="^[0-9a-zA-Z]+([._+-][0-9a-zA-Z]+)+@[0-9a-zA-Z]+.[a-zA-Z]{2,4}+([.][a-zA-Z]{2})$"
+pat="^[0-9a-zA-Z]+([._+-][0-9a-zA-Z]+)*@[0-9a-zA-Z]+(.[a-zA-Z{3})([.][a-zA-Z]{2})*$"
 echo "i"
 if [[ $i =~ $pat ]]
 then
