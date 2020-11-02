@@ -1,0 +1,44 @@
+#!/bin/bash -x
+echo "enter a value"
+read $a
+echo "enter b value"
+read $b
+echo "enter c value"
+read $c
+
+val1=$((10+5*6))
+echo $val1
+val2=$((10%5+6))
+echo "$val2"
+val3='expr $c+$ab
+echo "$val3"
+val4='expr $a\*$b+$c'
+echo "$val4"
+
+if [val1 -gt val2] && [val1 -gt val3] && [val1 -gt val4]
+then
+echo $val1 is maximum
+elif [val2 -gt val1] && [val2 -gt val3] && [val1 -gt val4]
+then
+echo $val2 is maximum
+elif [val3 -gt val1] && [val3 -gt val2] && [val3 -gt val4]
+then
+echo $val3 is maximum
+else
+echo $val4 is maximum
+fi
+
+if [val1 -lt val2] && [val1 -lt val3] && [val1 -lt val4]
+then
+echo $val1 is minimum
+elif [val2 -lt val1] && [val2 -lt val3] && [val1 -lt val4]
+then
+echo $val2 is minimum
+elif [val3 -lt val1] && [val3 -lt val2] && [val3 -lt val4]
+then
+echo $val3 is minimum
+else
+echo $val4 is minimum
+fi
+
+

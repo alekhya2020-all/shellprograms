@@ -1,0 +1,23 @@
+#!/bin/bash -x
+echo "a,b,flag"
+read a,b,flag
+
+echo "enter least number:a"
+echo "enter highest number:b"
+echo $a $b
+
+for((i = a; i <= b; i++))
+        Skip 0 and 1 as they are
+        niether prime nor composite
+        if (i == 1 || i 
+
+        for (j = 2; j <= i / 2; ++j) {
+            if (i % j == 0) {
+                flag = 0;
+                break;
+            }
+        }
+        // flag = 1 means i is prime
+        // and flag = 0 means i is not prime
+        if (flag == 1)
+            printf("%d ", i);
