@@ -13,12 +13,12 @@ public class EmpWageBuilder{
        this.Maxhoursinmonth=Maxhoursinmonth;
 }
        }
-//   public void setTotalEmpWage(int TotalEmpWage){
-//		this.TotalEmpWage=TotalEmpWage;
-//		}
-  //    @Override
-    //  public String toString(){
-      //return "Total Emp Wage for company:" +Company+ "is:"+TotalEmpWage;
-      //}
-//}
+       public void setTotalEmpWage(int TotalEmpWage){
+		this.TotalEmpWage=TotalEmpWage;
+		}
+        @Override
+        public String toString(){
+        return "Total Emp Wage for company:" +Company+ "is:"+TotalEmpWage;
+        }
+}
 
